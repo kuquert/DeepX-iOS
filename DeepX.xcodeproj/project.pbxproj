@@ -588,6 +588,7 @@
 				647DFC711ED9254200E24624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		647DFC721ED9254200E24624 /* Build configuration list for PBXNativeTarget "DeepXTests" */ = {
 			isa = XCConfigurationList;
@@ -596,6 +597,7 @@
 				647DFC741ED9254200E24624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		647DFC751ED9254200E24624 /* Build configuration list for PBXNativeTarget "DeepXUITests" */ = {
 			isa = XCConfigurationList;
@@ -604,6 +606,7 @@
 				647DFC771ED9254200E24624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
