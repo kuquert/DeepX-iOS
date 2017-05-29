@@ -21,6 +21,7 @@
 		647DFC871ED935B000E24624 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC841ED935B000E24624 /* Alamofire.framework */; };
 		647DFC881ED935B000E24624 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */; };
 		647DFC891ED935B000E24624 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC861ED935B000E24624 /* ObjectMapper.framework */; };
+		647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC8B1ED952F500E24624 /* RestUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		647DFC841ED935B000E24624 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC861ED935B000E24624 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		647DFC8B1ED952F500E24624 /* RestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		647DFC461ED9254100E24624 /* DeepX */ = {
 			isa = PBXGroup;
 			children = (
+				647DFC8A1ED952B400E24624 /* Rest */,
 				647DFC471ED9254100E24624 /* AppDelegate.swift */,
 				647DFC781ED9318700E24624 /* Model */,
 				647DFC491ED9254100E24624 /* ViewController.swift */,
@@ -163,6 +166,14 @@
 				647DFC861ED935B000E24624 /* ObjectMapper.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		647DFC8A1ED952B400E24624 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				647DFC8B1ED952F500E24624 /* RestUtil.swift */,
+			);
+			name = Rest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +340,7 @@
 				647DFC811ED931E600E24624 /* Permissions.swift in Sources */,
 				640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */,
 				647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */,
+				647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
