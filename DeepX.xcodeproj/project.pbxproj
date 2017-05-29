@@ -15,6 +15,9 @@
 		647DFC551ED9254100E24624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC531ED9254100E24624 /* LaunchScreen.storyboard */; };
 		647DFC601ED9254200E24624 /* DeepXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC5F1ED9254200E24624 /* DeepXTests.swift */; };
 		647DFC6B1ED9254200E24624 /* DeepXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC6A1ED9254200E24624 /* DeepXUITests.swift */; };
+		647DFC7C1ED931B600E24624 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC7B1ED931B600E24624 /* Repo.swift */; };
+		647DFC7E1ED931CE00E24624 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC7D1ED931CE00E24624 /* Owner.swift */; };
+		647DFC811ED931E600E24624 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC801ED931E600E24624 /* Permissions.swift */; };
 		647DFC871ED935B000E24624 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC841ED935B000E24624 /* Alamofire.framework */; };
 		647DFC881ED935B000E24624 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */; };
 		647DFC891ED935B000E24624 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC861ED935B000E24624 /* ObjectMapper.framework */; };
@@ -52,6 +55,9 @@
 		647DFC661ED9254200E24624 /* DeepXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		647DFC6A1ED9254200E24624 /* DeepXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepXUITests.swift; sourceTree = "<group>"; };
 		647DFC6C1ED9254200E24624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		647DFC7B1ED931B600E24624 /* Repo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repo.swift; path = Model/Repo.swift; sourceTree = "<group>"; };
+		647DFC7D1ED931CE00E24624 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Owner.swift; path = Model/Owner.swift; sourceTree = "<group>"; };
+		647DFC801ED931E600E24624 /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Permissions.swift; path = Model/Permissions.swift; sourceTree = "<group>"; };
 		647DFC841ED935B000E24624 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC861ED935B000E24624 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -110,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				647DFC471ED9254100E24624 /* AppDelegate.swift */,
+				647DFC781ED9318700E24624 /* Model */,
 				647DFC491ED9254100E24624 /* ViewController.swift */,
 				647DFC4B1ED9254100E24624 /* Main.storyboard */,
 				647DFC511ED9254100E24624 /* Assets.xcassets */,
@@ -136,6 +143,16 @@
 				647DFC6C1ED9254200E24624 /* Info.plist */,
 			);
 			path = DeepXUITests;
+			sourceTree = "<group>";
+		};
+		647DFC781ED9318700E24624 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				647DFC7D1ED931CE00E24624 /* Owner.swift */,
+				647DFC7B1ED931B600E24624 /* Repo.swift */,
+				647DFC801ED931E600E24624 /* Permissions.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		647DFC831ED935B000E24624 /* Frameworks */ = {
@@ -307,6 +324,9 @@
 			files = (
 				647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */,
 				647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */,
+				647DFC7E1ED931CE00E24624 /* Owner.swift in Sources */,
+				647DFC811ED931E600E24624 /* Permissions.swift in Sources */,
+				640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */,
 				647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
