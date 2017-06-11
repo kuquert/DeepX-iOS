@@ -14,6 +14,7 @@ class RepoTableViewCell: UITableViewCell {
     @IBOutlet weak var issueLabel: UILabel!
     @IBOutlet weak var createdAtLabel: UILabel!
     @IBOutlet weak var updatedAtLabel: UILabel!
+    @IBOutlet weak var issuesImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,8 +33,11 @@ class RepoTableViewCell: UITableViewCell {
         
         self.nameLabel.text = "\(repo.name ?? "???")"
         self.issueLabel.text = "\(repo.open_issues ?? -1)"
-        self.updatedAtLabel.text = "Updated on \(formatter.string(from: repo.updated_at!))"
-        self.createdAtLabel.text = "Created on \(formatter.string(from: repo.created_at!))"
+        self.updatedAtLabel.text = "Updated on \(formatter.string(from: repo.updated_at ?? Date()))"
+        self.createdAtLabel.text = "Created on \(formatter.string(from: repo.created_at ?? Date()))"
+        self.issuesImageView.image? = (self.issuesImageView.image?.withRenderingMode(.alwaysTemplate))!
+        self.issuesImageView.tintColor = UIColor.red
+        
     }
 
 }

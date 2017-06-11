@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private static let user = "BearchInc"
+    private var user = "BearchInc"
     
     typealias CountTuple = (langCount: Int, repos: [Repo])
     
@@ -22,19 +23,17 @@ class ViewController: UIViewController {
         get { return [String](languages.keys) }
     }
     
-    override func viewDidLoad() {
+    let titleField = UITextField(frame: CGRect(x: 0, y: 0, width: 200, height: 22))
+    
+    func reloadWithUser(user _user: String) {
+        self.user = _user
+        self.languages.removeAll()
         
-        super.viewDidLoad()
+        titleField.text = _user
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        
-        title = ViewController.user
-        
-        RestUtil.allReposForUser(user: ViewController.user){ repos in
-            
-            repos.forEach( {
-                RestUtil.languagesForRepo(repo: $0, ofUser: ViewController.user, response: { (dict, repo) in
+        RestUtil.allReposForUser(user: _user){ repos in
+//            repos?.forEach( {
+                RestUtil.languagesForRepo(repo: (repos?[0])!, ofUser: _user, response: { (dict, repo) in
                     for (key, value) in dict {
                         
                         if let item = self.languages[key] {
@@ -52,8 +51,24 @@ class ViewController: UIViewController {
                     }
                     print(self.languages)
                 })
-            })
+//            })
         }
+    }
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        titleField.delegate = self
+        titleField.font = UIFont.boldSystemFont(ofSize: 19)
+        titleField.textAlignment = .center
+        titleField.clearButtonMode = .whileEditing
+        navigationItem.titleView = titleField
+        
+        reloadWithUser(user: user)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +86,16 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        let user = textField.text ?? ""
+        reloadWithUser(user: user)
+        textField.resignFirstResponder()
+        return false
+    }
+    
+}
 extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -97,10 +122,20 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? LanguageTableViewCell
         let row = indexPath.row
         let key = keyList[row]
-        cell?.textLabel?.text =  "\(key) with: \((languages[key]?.langCount)!) lines and \((languages[key]?.repos.count)!) repos"
+        
+        if let image = UIImage(named: key.lowercased() + ".pdf") {
+            cell?.iconImageView?.image = image
+        } else {
+            cell?.iconImageView?.image = UIImage(named: "default.pdf")
+        }
+        
+        cell?.iconImageView?.contentMode = .scaleAspectFit
+        cell?.titleLabel?.text =  "\(key)"
+        cell?.subtitleLabel?.text = " Lines: \((languages[key]?.langCount)!)"
+        cell?.descriptionLabel?.text = "Repos: \((languages[key]?.repos.count)!)"
         
         return cell ?? UITableViewCell()
     }

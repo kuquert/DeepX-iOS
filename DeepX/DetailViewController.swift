@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class DetailViewController: UIViewController {
 
@@ -30,6 +31,10 @@ extension DetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        //TODO verify forced unwrapping
+        let repo = repos[indexPath.row]
+        let svc = SFSafariViewController(url: URL(string: repo.html_url!)!)
+        navigationController?.present(svc, animated: true, completion: nil)
     }
     
 }
