@@ -13,7 +13,6 @@
 		647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC491ED9254100E24624 /* ViewController.swift */; };
 		647DFC4D1ED9254100E24624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC4B1ED9254100E24624 /* Main.storyboard */; };
 		647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC4E1ED9254100E24624 /* DeepX.xcdatamodeld */; };
-		647DFC521ED9254100E24624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC511ED9254100E24624 /* Assets.xcassets */; };
 		647DFC551ED9254100E24624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC531ED9254100E24624 /* LaunchScreen.storyboard */; };
 		647DFC601ED9254200E24624 /* DeepXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC5F1ED9254200E24624 /* DeepXTests.swift */; };
 		647DFC6B1ED9254200E24624 /* DeepXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC6A1ED9254200E24624 /* DeepXUITests.swift */; };
@@ -24,6 +23,7 @@
 		647DFC881ED935B000E24624 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */; };
 		647DFC891ED935B000E24624 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC861ED935B000E24624 /* ObjectMapper.framework */; };
 		647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC8B1ED952F500E24624 /* RestUtil.swift */; };
+		64F7DFB21EECB1DF006ED300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F7DFB11EECB1DF006ED300 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 		647DFC491ED9254100E24624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		647DFC4C1ED9254100E24624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		647DFC4F1ED9254100E24624 /* DeepX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepX.xcdatamodel; sourceTree = "<group>"; };
-		647DFC511ED9254100E24624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647DFC541ED9254100E24624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647DFC561ED9254100E24624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		647DFC5B1ED9254200E24624 /* DeepXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +66,7 @@
 		647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC861ED935B000E24624 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC8B1ED952F500E24624 /* RestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestUtil.swift; sourceTree = "<group>"; };
+		64F7DFB11EECB1DF006ED300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 				640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */,
 				640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */,
 				647DFC4B1ED9254100E24624 /* Main.storyboard */,
-				647DFC511ED9254100E24624 /* Assets.xcassets */,
 				647DFC531ED9254100E24624 /* LaunchScreen.storyboard */,
+				64F7DFB11EECB1DF006ED300 /* Assets.xcassets */,
 				647DFC561ED9254100E24624 /* Info.plist */,
 				647DFC4E1ED9254100E24624 /* DeepX.xcdatamodeld */,
 			);
@@ -294,7 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				647DFC551ED9254100E24624 /* LaunchScreen.storyboard in Resources */,
-				647DFC521ED9254100E24624 /* Assets.xcassets in Resources */,
+				64F7DFB21EECB1DF006ED300 /* Assets.xcassets in Resources */,
 				647DFC4D1ED9254100E24624 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
