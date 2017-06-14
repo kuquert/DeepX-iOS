@@ -17,11 +17,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    private let blackColor = UIColor(rgb: 0x2E2D33)
+    private let darkGrayColor = UIColor(rgb: 0x696A75)
+    
     private var activityIndicator: UIActivityIndicatorView!
     private var refreshControl: UIRefreshControl!
     private var titleField: UITextField!
     
-    private var isReachable = false
+    private var isReachable = true
     private let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "https://api.github.com")
     
     fileprivate var user = "BearchInc"
@@ -64,7 +67,8 @@ class ViewController: UIViewController {
         tableView?.addSubview(refreshControl)
         tableView?.tableFooterView = UIView()
         
-        activityIndicator.color = .red
+        activityIndicator.color = UIColor(rgb: 0x696A75)
+        
         
         reloadData()
     }
@@ -96,6 +100,9 @@ class ViewController: UIViewController {
     private func loadOnlineAndSave() {
         
         self.activityIndicator.startAnimating()
+        self.refreshControl.beginRefreshing()
+        self.languages.removeAll()
+        self.tableView.reloadData()
         
         RealmUtil.saveReposLocally(user: self.user) { resp in
             switch resp {
@@ -177,7 +184,7 @@ extension ViewController: UITableViewDataSource {
         } else {
             let messageLabel = UILabel(frame: self.view.frame)
             messageLabel.text = "Nenhuma linguagem encontrada para este usuário"
-            messageLabel.textColor = UIColor.black
+            messageLabel.textColor = darkGrayColor
             messageLabel.numberOfLines = 0
             messageLabel.textAlignment = .center
             messageLabel.font = UIFont(name: "Helvetica-Bold", size: 36)
@@ -206,6 +213,7 @@ extension ViewController: UITableViewDataSource {
         cell?.subtitleLabel?.text = "Repos: \((item?.repos.count) ?? -1)"
         cell?.descriptionLabel?.text = "Lines: \((item?.linesCount ?? -1).formattedWithSeparator)"
         cell?.iconImageView?.contentMode = .scaleAspectFit
+        cell?.iconImageView?.tintColor = blackColor
         cell?.iconImageView?.image = image
         
         return cell ?? UITableViewCell()
