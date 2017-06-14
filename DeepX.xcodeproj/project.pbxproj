@@ -16,7 +16,6 @@
 		647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC471ED9254100E24624 /* AppDelegate.swift */; };
 		647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC491ED9254100E24624 /* ViewController.swift */; };
 		647DFC4D1ED9254100E24624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC4B1ED9254100E24624 /* Main.storyboard */; };
-		647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC4E1ED9254100E24624 /* DeepX.xcdatamodeld */; };
 		647DFC551ED9254100E24624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC531ED9254100E24624 /* LaunchScreen.storyboard */; };
 		647DFC601ED9254200E24624 /* DeepXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC5F1ED9254200E24624 /* DeepXTests.swift */; };
 		647DFC6B1ED9254200E24624 /* DeepXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC6A1ED9254200E24624 /* DeepXUITests.swift */; };
@@ -60,7 +59,6 @@
 		647DFC471ED9254100E24624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		647DFC491ED9254100E24624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		647DFC4C1ED9254100E24624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		647DFC4F1ED9254100E24624 /* DeepX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepX.xcdatamodel; sourceTree = "<group>"; };
 		647DFC541ED9254100E24624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		647DFC561ED9254100E24624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		647DFC5B1ED9254200E24624 /* DeepXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +141,6 @@
 				647DFC531ED9254100E24624 /* LaunchScreen.storyboard */,
 				64F7DFB11EECB1DF006ED300 /* Assets.xcassets */,
 				647DFC561ED9254100E24624 /* Info.plist */,
-				647DFC4E1ED9254100E24624 /* DeepX.xcdatamodeld */,
 			);
 			path = DeepX;
 			sourceTree = "<group>";
@@ -364,7 +361,6 @@
 				647DFC7E1ED931CE00E24624 /* Owner.swift in Sources */,
 				640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */,
 				645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */,
-				647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */,
 				640887DD1EF0F4D00006D520 /* Extensions.swift in Sources */,
 				64F4670E1EF0B9D4007475D7 /* CustomAPIError.swift in Sources */,
 				6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */,
@@ -651,19 +647,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		647DFC4E1ED9254100E24624 /* DeepX.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				647DFC4F1ED9254100E24624 /* DeepX.xcdatamodel */,
-			);
-			currentVersion = 647DFC4F1ED9254100E24624 /* DeepX.xcdatamodel */;
-			path = DeepX.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 647DFC3C1ED9254100E24624 /* Project object */;
 }
