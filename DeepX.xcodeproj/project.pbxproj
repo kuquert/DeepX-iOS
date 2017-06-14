@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640887DD1EF0F4D00006D520 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640887DC1EF0F4D00006D520 /* Extensions.swift */; };
 		640FA3601EDBC19D006CB0D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */; };
 		640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */; };
 		645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645C3C271EEEB2FB007187F9 /* RealmUtil.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		640887DC1EF0F4D00006D520 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		645C3C271EEEB2FB007187F9 /* RealmUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUtil.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */,
 				6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */,
 				647DFC491ED9254100E24624 /* ViewController.swift */,
+				640887DC1EF0F4D00006D520 /* Extensions.swift */,
 				647DFC4B1ED9254100E24624 /* Main.storyboard */,
 				647DFC531ED9254100E24624 /* LaunchScreen.storyboard */,
 				64F7DFB11EECB1DF006ED300 /* Assets.xcassets */,
@@ -362,6 +365,7 @@
 				640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */,
 				645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */,
 				647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */,
+				640887DD1EF0F4D00006D520 /* Extensions.swift in Sources */,
 				64F4670E1EF0B9D4007475D7 /* CustomAPIError.swift in Sources */,
 				6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */,
 				647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */,
