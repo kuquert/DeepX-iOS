@@ -20,8 +20,10 @@ class DetailViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
-        //TODO verify forced unwrapping
-        repos = repos.sorted(by: { return $0.0.open_issues! > $0.1.open_issues! })
+        
+        repos = repos.sorted {
+            return $0.open_issues > $1.open_issues
+        }
         
         tableView.reloadData()
     }
@@ -31,10 +33,14 @@ extension DetailViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        //TODO verify forced unwrapping
+        
         let repo = repos[indexPath.row]
-        let svc = SFSafariViewController(url: URL(string: repo.html_url!)!)
-        navigationController?.present(svc, animated: true, completion: nil)
+        if let url = URL(string: repo.html_url ?? "") {
+            let svc = SFSafariViewController(url: url)
+            navigationController?.present(svc, animated: true, completion: nil)
+        } else {
+            //Shoul show error dialog with "invalid url message"
+        }
     }
     
 }
