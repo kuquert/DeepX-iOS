@@ -13,6 +13,7 @@
 		645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645C3C271EEEB2FB007187F9 /* RealmUtil.swift */; };
 		645DA07C1EEE2A3600BF52B6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA07B1EEE2A3600BF52B6 /* Language.swift */; };
 		6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */; };
+		6472CB911EECF6590003ABD3 /* Repos.json in Resources */ = {isa = PBXBuildFile; fileRef = 6472CB901EECF6590003ABD3 /* Repos.json */; };
 		647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC471ED9254100E24624 /* AppDelegate.swift */; };
 		647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC491ED9254100E24624 /* ViewController.swift */; };
 		647DFC4D1ED9254100E24624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 647DFC4B1ED9254100E24624 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		645DA0771EED1E1800BF52B6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		645DA07B1EEE2A3600BF52B6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		6472CB901EECF6590003ABD3 /* Repos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Repos.json; sourceTree = "<group>"; };
 		6472CBB71EED1B260003ABD3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		647DFC441ED9254100E24624 /* DeepX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647DFC471ED9254100E24624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				647DFC5F1ED9254200E24624 /* DeepXTests.swift */,
+				6472CB901EECF6590003ABD3 /* Repos.json */,
 				647DFC611ED9254200E24624 /* Info.plist */,
 			);
 			path = DeepXTests;
@@ -316,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6472CB911EECF6590003ABD3 /* Repos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
