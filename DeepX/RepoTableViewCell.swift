@@ -10,10 +10,10 @@ import UIKit
 
 class RepoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var issueLabel: UILabel!
-    @IBOutlet weak var createdAtLabel: UILabel!
-    @IBOutlet weak var updatedAtLabel: UILabel!
+    @IBOutlet weak var detailTitleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var issuesImageView: UIImageView!
     
     override func awakeFromNib() {
@@ -31,10 +31,10 @@ class RepoTableViewCell: UITableViewCell {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium
         
-        self.nameLabel.text = "\(repo.name ?? "???")"
-        self.issueLabel.text = "\(repo.open_issues ?? -1)"
-        self.updatedAtLabel.text = "Updated on \(formatter.string(from: repo.updated_at ?? Date()))"
-        self.createdAtLabel.text = "Created on \(formatter.string(from: repo.created_at ?? Date()))"
+        self.titleLabel.text = "\(repo.name ?? "???")"
+        self.detailTitleLabel.text = "\(repo.open_issues)"
+        self.subtitleLabel.text = "Updated on \(formatter.string(from: repo.updated_at ?? Date()))"
+        self.detailLabel.text = "Created on \(formatter.string(from: repo.created_at ?? Date()))"
         self.issuesImageView.image? = (self.issuesImageView.image?.withRenderingMode(.alwaysTemplate))!
         self.issuesImageView.tintColor = UIColor.red
         
