@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    private let blackColor = UIColor(rgb: 0x2E2D33)
-    private let darkGrayColor = UIColor(rgb: 0x696A75)
+    fileprivate let blackColor = UIColor(rgb: 0x2E2D33)
+    fileprivate let darkGrayColor = UIColor(rgb: 0x696A75)
     
     private var activityIndicator: UIActivityIndicatorView!
     private var refreshControl: UIRefreshControl!
