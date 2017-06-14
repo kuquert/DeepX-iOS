@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		640FA3601EDBC19D006CB0D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */; };
 		640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */; };
+		645DA07C1EEE2A3600BF52B6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA07B1EEE2A3600BF52B6 /* Language.swift */; };
 		6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */; };
 		647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC471ED9254100E24624 /* AppDelegate.swift */; };
 		647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC491ED9254100E24624 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		645DA07B1EEE2A3600BF52B6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		647DFC441ED9254100E24624 /* DeepX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647DFC471ED9254100E24624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				647DFC7D1ED931CE00E24624 /* Owner.swift */,
 				647DFC7B1ED931B600E24624 /* Repo.swift */,
 				647DFC801ED931E600E24624 /* Permissions.swift */,
+				645DA07B1EEE2A3600BF52B6 /* Language.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
