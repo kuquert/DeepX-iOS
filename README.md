@@ -7,7 +7,7 @@ this project uses [Carthage](https://github.com/Carthage/Carthage)<sup>*</sup>, 
 ```
 $ carthage bootstrap --platform iOS
 ```
-<sup>*I decided to not include de Carthage/ folter on source control to get smaller repo size and don`t have trash commints from libreries update.</sup>
+<sup>*I decided to not include de Carthage/ folder on source control to get smaller repo size and don`t have trash commints from libreries update.</sup>
  
 This project uses the icons from this [file-icons](https://github.com/file-icons/source), they only have .svg files available. The .svg files were than converted to .pdf using [caisosvg](http://cairosvg.org/) converter.:D
 
