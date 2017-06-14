@@ -18,14 +18,9 @@ class LanguageTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        iconImageView.image? = (iconImageView.image?.withRenderingMode(.alwaysTemplate))!
-        iconImageView.tintColor = .magenta
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
     }
-
 }
