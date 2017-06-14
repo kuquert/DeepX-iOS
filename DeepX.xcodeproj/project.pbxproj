@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		640FA3601EDBC19D006CB0D8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */; };
 		640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */; };
+		645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645C3C271EEEB2FB007187F9 /* RealmUtil.swift */; };
 		645DA07C1EEE2A3600BF52B6 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645DA07B1EEE2A3600BF52B6 /* Language.swift */; };
 		6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */; };
 		647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC471ED9254100E24624 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 		647DFC881ED935B000E24624 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */; };
 		647DFC891ED935B000E24624 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 647DFC861ED935B000E24624 /* ObjectMapper.framework */; };
 		647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647DFC8B1ED952F500E24624 /* RestUtil.swift */; };
+		64F4670E1EF0B9D4007475D7 /* CustomAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F4670D1EF0B9D4007475D7 /* CustomAPIError.swift */; };
 		64F7DFB21EECB1DF006ED300 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F7DFB11EECB1DF006ED300 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 /* Begin PBXFileReference section */
 		640FA35F1EDBC19D006CB0D8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		640FA3611EDBC45D006CB0D8 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		645C3C271EEEB2FB007187F9 /* RealmUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmUtil.swift; sourceTree = "<group>"; };
+		645DA0771EED1E1800BF52B6 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		645DA07B1EEE2A3600BF52B6 /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		6472CB8E1EECDBD60003ABD3 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		6472CBB71EED1B260003ABD3 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		647DFC851ED935B000E24624 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC861ED935B000E24624 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		647DFC8B1ED952F500E24624 /* RestUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestUtil.swift; sourceTree = "<group>"; };
+		64F4670D1EF0B9D4007475D7 /* CustomAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAPIError.swift; sourceTree = "<group>"; };
 		64F7DFB11EECB1DF006ED300 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				647DFC8B1ED952F500E24624 /* RestUtil.swift */,
+				64F4670D1EF0B9D4007475D7 /* CustomAPIError.swift */,
+				645C3C271EEEB2FB007187F9 /* RealmUtil.swift */,
 			);
 			name = Rest;
 			sourceTree = "<group>";
@@ -349,10 +356,13 @@
 			files = (
 				647DFC4A1ED9254100E24624 /* ViewController.swift in Sources */,
 				647DFC7C1ED931B600E24624 /* Repo.swift in Sources */,
+				645DA07C1EEE2A3600BF52B6 /* Language.swift in Sources */,
 				647DFC481ED9254100E24624 /* AppDelegate.swift in Sources */,
 				647DFC7E1ED931CE00E24624 /* Owner.swift in Sources */,
 				640FA3621EDBC45D006CB0D8 /* RepoTableViewCell.swift in Sources */,
+				645C3C281EEEB2FB007187F9 /* RealmUtil.swift in Sources */,
 				647DFC501ED9254100E24624 /* DeepX.xcdatamodeld in Sources */,
+				64F4670E1EF0B9D4007475D7 /* CustomAPIError.swift in Sources */,
 				6472CB8F1EECDBD60003ABD3 /* LanguageTableViewCell.swift in Sources */,
 				647DFC8C1ED952F500E24624 /* RestUtil.swift in Sources */,
 				640FA3601EDBC19D006CB0D8 /* DetailViewController.swift in Sources */,
