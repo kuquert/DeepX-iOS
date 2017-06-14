@@ -20,6 +20,7 @@ class DetailViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.tableFooterView = UIView()
         
         repos = repos.sorted {
             return $0.open_issues > $1.open_issues
