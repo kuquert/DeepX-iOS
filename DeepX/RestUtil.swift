@@ -29,7 +29,7 @@ struct RestUtil {
     
     static let manager: Alamofire.SessionManager = {
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 10 // seconds
+        configuration.timeoutIntervalForRequest = 20 // seconds
         configuration.requestCachePolicy = .reloadRevalidatingCacheData
         return Alamofire.SessionManager(configuration: configuration)
     }()
@@ -41,7 +41,7 @@ struct RestUtil {
         
         switch route {
         case .languages(let user, let repo):
-            return "\(baseUrl)/repos/\(user)/\(repo)/languages"
+            return "\(baseUrl)/repos/\(user)/\(repo)/languages?client_id=\(clientID)&client_secret=\(clientSecret)"
         case .repos(let user):
             return "\(baseUrl)/users/\(user)/repos?client_id=\(clientID)&client_secret=\(clientSecret)"
         }
@@ -62,7 +62,7 @@ struct RestUtil {
                         case .success(let languages):
                             i += 1
                             repo.languages.append(objectsIn: languages)
-                            
+                            print("\(repo.languages.count) - \(repo.languages.first?.name)")
                             if i == repos.count {
                                 completion(CustomResponse<[Repo], CustomAPIError>.success(repos))
                             }
